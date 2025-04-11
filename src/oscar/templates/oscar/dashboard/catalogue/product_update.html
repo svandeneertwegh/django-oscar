@@ -66,52 +66,52 @@
                             {% endcomment %}
                             {% block tabs %}
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#product_details" data-toggle="tab">
+                                    <a class="nav-link active" href="#product_details" data-bs-toggle="tab">
                                         {% trans 'Product details' %}
                                     </a>
                                 </li>
                                 {% if not parent %}
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#product_category" data-toggle="tab">
+                                        <a class="nav-link" href="#product_category" data-bs-toggle="tab">
                                             {% trans 'Categories' %}
                                         </a>
                                     </li>
                                 {% endif %}
                                 {% if product_class.has_attributes %}
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#product_attributes" data-toggle="tab">
+                                        <a class="nav-link" href="#product_attributes" data-bs-toggle="tab">
                                             {% trans 'Attributes' %}
                                         </a>
                                     </li>
                                 {% endif %}
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#product_images" data-toggle="tab">
+                                  <a class="nav-link" href="#product_images" data-bs-toggle="tab">
                                       {% trans 'Images' %}
                                   </a>
                                 </li>
                                 {% if not product.is_parent %}
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#product_stock" data-toggle="tab">
+                                        <a class="nav-link" href="#product_stock" data-bs-toggle="tab">
                                             {% trans 'Stock and pricing' %}
                                         </a>
                                     </li>
                                 {% endif %}
                                 {% if user.is_staff and not parent %}
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#child_products" data-toggle="tab">
+                                        <a class="nav-link" href="#child_products" data-bs-toggle="tab">
                                             {% trans 'Variants' %}
                                         </a>
                                     </li>
                                 {% endif %}
                                 {% if not parent %}
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#product_recommended" data-toggle="tab">
+                                        <a class="nav-link" href="#product_recommended" data-bs-toggle="tab">
                                             {% trans 'Upselling' %}
                                         </a>
                                     </li>
                                 {% endif %}
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#seo" data-toggle="tab">
+                                    <a class="nav-link" href="#seo" data-bs-toggle="tab">
                                         {% trans 'Search engine optimisation' %}
                                     </a>
                                 </li>
