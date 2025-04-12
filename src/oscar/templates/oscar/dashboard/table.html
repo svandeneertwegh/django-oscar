@@ -5,12 +5,12 @@
 {% block table.thead %}
 <caption>
     {% block table.caption %}
-        <h3 class="float-left">
+        <div class="float-left">
             {% if table.icon %}
                 <i class="{{ table.icon }}"></i>
             {% endif %}
             {{ table.get_caption_display }}
-        </h3>
+        </div>
     {% endblock %}
 </caption>
 <thead>

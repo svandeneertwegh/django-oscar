@@ -56,7 +56,7 @@
                     {% endif %}
                 {% endfor %}
                 <button type="submit" class="btn btn-primary mr-2" data-loading-text="{% trans 'Searching...' %}">{% trans "Search" %}</button>
-                <a data-bs-toggle="modal" data-target="#SearchModal" href="#" class="mr-2">{% trans "Advanced Search" %}</a>
+                <a data-bs-toggle="modal" data-bs-target="#SearchModal" href="#" class="mr-2">{% trans "Advanced Search" %}</a>
                 <a href="{% url 'dashboard:voucher-list' %}" class="btn btn-secondary">{% trans "Reset" %}</a>
             </form>
 
